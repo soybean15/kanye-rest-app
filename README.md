@@ -59,6 +59,11 @@ Laravel uses NPM to manage frontend dependencies. Install the required packages 
 npm install
 
 ```
+Then, compile the frontend assets:
+```bash
+npm run dev
+
+```
 ### 6. Build Docker Containers
 
 Build the Docker containers for Sail:
