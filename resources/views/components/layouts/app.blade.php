@@ -12,9 +12,20 @@
 
     <div class="shadow-md md:px-20 navbar bg-base-100">
         <div class="flex-1">
-            <a class="text-xl btn btn-ghost">Kanye Qoutes</a>
+            <a class="text-md md:text-xl btn btn-ghost">Kanye Qoutes</a>
         </div>
         <div class="flex-none">
+            <div class="mx-5">
+                <a href="{{ route('kanye.home') }}">
+                <button class="btn btn-ghost btn-sm">Home</button>
+                </a>
+                <a href="{{ route('kanye.api') }}">
+                <button class="btn btn-ghost btn-sm">API</button>
+                </a>
+            </div>
+
+
+
 
             <form method="POST" action="{{ route('logout') }}">
                 @csrf

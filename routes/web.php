@@ -18,8 +18,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    Route::get('/',KanyeQuotes::class)->name('home');
-    Route::get('/api',KanyeQuotesApi::class)->name('home');
+    Route::get('/',KanyeQuotes::class)->name('kanye.home');
+    Route::get('/api',KanyeQuotesApi::class)->name('kanye.api');
 
 });
 

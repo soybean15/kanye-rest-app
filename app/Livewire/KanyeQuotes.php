@@ -51,5 +51,6 @@ class KanyeQuotes extends Component
 
     public function refreshContent(){
         $this->fetchKanyeQoutes();
+        $this->timer=$this->timerValue;
     }
 }

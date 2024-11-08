@@ -3,7 +3,7 @@
 
 
 
-    <div class="flex flex-col items-center justify-center mx-10 mt-10 md:mx-40">
+    <div class="flex flex-col items-center justify-center mx-5 mt-10 md:mx-40">
 
         <div class="w-full p-5 bg-emerald-200 max-w-[900px] rounded-lg grid  md:flex justify-between my-5 items-center">
 
