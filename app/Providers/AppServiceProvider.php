@@ -12,7 +12,10 @@ class AppServiceProvider extends ServiceProvider
      * Register any application services.
      */
 
+    const KANYE_API_URL='https://api.kanye.rest';
+
     const KANYE_API ='kanye-quotes';
+    const KANYE_API_TOKEN='kanye_api_token';
     public function register(): void
     {
         //

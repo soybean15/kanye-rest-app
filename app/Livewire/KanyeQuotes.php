@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Providers\AppServiceProvider;
 use App\Services\Api\ApiService;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
@@ -33,7 +34,7 @@ class KanyeQuotes extends Component
 
     public function fetchKanyeQoutes(){
         $this->kanyeQuotes= (new ApiService())
-        ->setUrl('https://api.kanye.rest')
+        ->setUrl(AppServiceProvider::KANYE_API_URL)
         ->multiply(5)
         ->get();
         ;

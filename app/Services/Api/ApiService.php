@@ -10,16 +10,15 @@ class ApiService
 
     public $url;
     public $token;
-    public $validateWithToken;
 
     public $response=[];
 
     public $numberOfItems = 1;
-    public function __construct($validateWithToken = false, $url = null)
+    public function __construct( $url = null)
     {
 
         $this->url = $url;
-        $this->validateWithToken = $validateWithToken;
+
     }
 
     public function setUrl($url)
