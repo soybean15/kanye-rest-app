@@ -74,7 +74,7 @@ Build the Docker containers for Sail:
 ### 7. Run Migrations
 Run the database migrations:
 ```bash
-./vendor/bin/sail artisan migrate
+./vendor/bin/sail artisan migrate --seed
 
 ```
 ### 8: Access the Application
@@ -85,6 +85,11 @@ You can access the application in your browser by navigating to:
 ```bash
 http://localhost
 
+```
+Log in with this credentials 
+```
+email : test@example.com
+password : password 
 ```
 **Reminder**: If you're using a different port, replace `http://localhost` with `http://localhost:<your-port-number>` (e.g., `http://localhost:8080` if you configured port `8080`).
 
