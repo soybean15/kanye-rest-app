@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\View\Components\KanyeQuoteCard;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -9,6 +11,8 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Register any application services.
      */
+
+    const KANYE_API ='kanye-quotes';
     public function register(): void
     {
         //
@@ -19,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+
+        Blade::component('kanye-quote-card', KanyeQuoteCard::class);
     }
 }
