@@ -31,7 +31,9 @@ class KanyeQuotesApi extends Component
     }
 
     public function reloadToken(){
-        $this->token = Auth::user()->tokens->where('name', AppServiceProvider::KANYE_API_TOKEN)->whereNull('expires_at')->first()->token;
+        $this->token = optional(Auth::user()->tokens->where('name', AppServiceProvider::KANYE_API_TOKEN)
+        ->whereNull('expires_at')
+        ->first())->token;
 
         $this->api_url = $this->currentRoute.'/'.AppServiceProvider::KANYE_API."?token=$this->token";
     }
